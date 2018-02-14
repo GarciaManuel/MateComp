@@ -1,5 +1,4 @@
 from numpy import *
-
 def isSuffix(a , b):
 
     lenA = len(a)
