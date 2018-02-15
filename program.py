@@ -41,7 +41,9 @@ def matcher(string,matrix,m,alphabet):
         q=matrix[q,alphabet.index(string[i])]
         if q==m:
             acum=acum+1
-    print acum
+    print(acum)
+
+
 
 import fileinput
 
