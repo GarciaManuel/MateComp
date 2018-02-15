@@ -45,16 +45,11 @@ def matcher(string,matrix,m,alphabet):
 
 
 
-import fileinput
-
-lines = []
-for line in fileinput.input():
-    lines.append(line)
 
 
-al = lines[0]
-p = lines[1]
-string = lines[2]
+al = input()
+p = input()
+string = input()
 m=len(p)
 alphabet=[]
 
