@@ -1,6 +1,7 @@
 from numpy import *
-def isSuffix(a , b):
 
+def isSuffix(a , b):
+    
     lenA = len(a)
     lenB = len(b)
     if (lenA==0 or lenB==0):
@@ -12,7 +13,7 @@ def isSuffix(a , b):
     return True
 
 def equal(a,b):
-
+    
     if(a==b):
         return True
     return False
@@ -20,7 +21,7 @@ def equal(a,b):
 def transition(p,list,matrix):
     m = len(p)
     al = len(list)
-
+    
     for q in range(0,m+1):
         for a in range(0,al):
             k= min(m+1,q+2)
@@ -42,12 +43,16 @@ def matcher(string,matrix,m,alphabet):
             acum=acum+1
     print acum
 
+import fileinput
+
+lines = []
+for line in fileinput.input():
+    lines.append(line)
 
 
-
-al = raw_input()
-p = raw_input()
-string = raw_input()
+al = lines[0]
+p = lines[1]
+string = lines[2]
 m=len(p)
 alphabet=[]
 
